@@ -1,0 +1,28 @@
+/donasi-website
+│── /frontend                # Frontend aplikasi (React.js/Vue.js/Next.js)
+│   ├── /src
+│   │   ├── /components      # Komponen UI yang digunakan
+│   │   ├── /pages           # Halaman utama (home, dashboard, dll.)
+│   │   ├── /store           # Manajemen state (Redux, Pinia, Context API)
+│   │   ├── /assets          # Gambar, ikon, CSS
+│   │   ├── /utils           # Helper function (format currency, API handler, dll.)
+│   ├── public               # File publik seperti favicon, manifest.json
+│   ├── .env                 # Environment variable untuk API keys
+│   ├── package.json         # Dependencies frontend
+│── /backend                 # Backend aplikasi (Node.js/Express.js atau Laravel)
+│   ├── /controllers         # Logika bisnis (UserController, DonationController, dll.)
+│   ├── /models              # Model database (User, Donation, Request, Order)
+│   ├── /routes              # API routes
+│   ├── /middlewares         # Middleware untuk autentikasi & otorisasi
+│   ├── /config              # Konfigurasi database, payment gateway, dll.
+│   ├── /services            # Integrasi dengan kurir & 3rd party marketplace
+│   ├── .env                 # Environment variable untuk API keys
+│   ├── package.json         # Dependencies backend
+│── /database                # Database setup (MySQL/PostgreSQL/MongoDB)
+│   ├── schema.sql           # Struktur tabel database
+│   ├── seeders/             # Data dummy untuk testing
+│── /mobile-app              # Aplikasi mobile (opsional, jika menggunakan React Native/Flutter)
+│── /docs                    # Dokumentasi API dan proyek
+│── README.md                # Penjelasan proyek
+│── .gitignore               # File yang tidak dimasukkan ke dalam repository
+│── LICENSE                  # Lisensi proyek
