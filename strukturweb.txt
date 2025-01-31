@@ -14,9 +14,11 @@
 │   │   ├── dashboard.jsx    # Dashboard (Donatur, Requestor, Admin)
 │   │   ├── login.jsx        # Halaman login
 │   │   ├── register.jsx     # Halaman pendaftaran
-│   ├── /store               # Manajemen state (Redux, Pinia, Context API)
-│   │   ├── authSlice.js     # State user login/logout
-│   │   ├── donationSlice.js # State untuk donasi
+│── /store
+│   ├── authSlice.js         # State user login/logout
+│   ├── donationSlice.js     # State untuk donasi
+│   ├── requestSlice.js      # State untuk permintaan donasi
+│   ├── store.js             # Menggabungkan semua slice Redux
 │   ├── /assets              # Gambar, ikon, dan styling
 │   │   ├── /images          # Folder untuk gambar statis
 │   │   ├── styles.css       # Styling utama
