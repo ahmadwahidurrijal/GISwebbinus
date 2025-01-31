@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import "leaflet/dist/leaflet.css"; // Impor CSS Leaflet
+import "./assets/styles.css"; // Impor CSS utama
+
 
 function App() {
     return (
