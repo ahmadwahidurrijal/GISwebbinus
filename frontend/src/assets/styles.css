@@ -137,3 +137,22 @@
     background-color: #0056b3;
 }
 @import "leaflet/dist/leaflet.css";
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
