@@ -1,11 +1,30 @@
 /donasi-website
 │── /frontend                # Frontend aplikasi (React.js/Vue.js/Next.js)
-│   ├── /src
-│   │   ├── /components      # Komponen UI yang digunakan
-│   │   ├── /pages           # Halaman utama (home, dashboard, dll.)
-│   │   ├── /store           # Manajemen state (Redux, Pinia, Context API)
-│   │   ├── /assets          # Gambar, ikon, CSS
-│   │   ├── /utils           # Helper function (format currency, API handler, dll.)
+│── /src                     # Source code utama
+│   ├── /components          # Komponen UI yang digunakan di banyak halaman
+│   │   ├── Navbar.jsx       # Navigasi utama
+│   │   ├── Footer.jsx       # Footer
+│   │   ├── Button.jsx       # Komponen tombol reusable
+│   │   ├── CardDonation.jsx # Kartu tampilan donasi
+│   │   ├── MapView.jsx      # Peta untuk melihat request donasi
+│   ├── /pages               # Halaman utama website
+│   │   ├── index.jsx        # Halaman utama (landing page)
+│   │   ├── donate.jsx       # Halaman donasi (barang/uang)
+│   │   ├── request.jsx      # Halaman untuk requestor
+│   │   ├── dashboard.jsx    # Dashboard (Donatur, Requestor, Admin)
+│   │   ├── login.jsx        # Halaman login
+│   │   ├── register.jsx     # Halaman pendaftaran
+│   ├── /store               # Manajemen state (Redux, Pinia, Context API)
+│   │   ├── authSlice.js     # State user login/logout
+│   │   ├── donationSlice.js # State untuk donasi
+│   ├── /assets              # Gambar, ikon, dan styling
+│   │   ├── /images          # Folder untuk gambar statis
+│   │   ├── styles.css       # Styling utama
+│   ├── /utils               # Helper function (format currency, API handler, dll.)
+│   │   ├── api.js           # Fetch API untuk komunikasi backend
+│   │   ├── format.js        # Fungsi format data (uang, tanggal, dll.)
+│   ├── App.js               # Entry point utama aplikasi
+│   ├── main.js              # Render aplikasi ke DOM
 │   ├── public               # File publik seperti favicon, manifest.json
 │   ├── .env                 # Environment variable untuk API keys
 │   ├── package.json         # Dependencies frontend
